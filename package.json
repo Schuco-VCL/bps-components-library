@@ -4,7 +4,18 @@
   "dependencies": {
     "tslib": "^2.0.0"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@angular/animations": "^16.2.12",
+    "@angular/common": "^16.2.12",
+    "@angular/core": "^16.2.12",
+    "@angular/forms": "^16.2.12",
+    "@angular/platform-browser": "^16.2.12",
+    "@angular/platform-browser-dynamic": "^16.2.12",
+    "@angular/router": "^16.2.12",
+    "ng-zorro-antd": "^16.2.2",
+    "rxjs": "^6.5.0",
+    "zone.js": "^0.13.0"
+  },
   "module": "fesm2022/bps-components-lib.mjs",
   "typings": "index.d.ts",
   "exports": {
@@ -18,8 +29,5 @@
       "default": "./fesm2022/bps-components-lib.mjs"
     }
   },
-  "sideEffects": false,
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
-  }
+  "sideEffects": false
 }
