@@ -1,25 +1,39 @@
 import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
 import * as i0 from "@angular/core";
 import * as i1 from "../core/addon/string_template_outlet";
+function BpsOptionItemGroupComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+    i0.ɵɵelementContainerStart(0);
+    i0.ɵɵtext(1);
+    i0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r0 = i0.ɵɵnextContext();
+    i0.ɵɵadvance();
+    i0.ɵɵtextInterpolate(ctx_r0.bpsLabel);
+} }
 export class BpsOptionItemGroupComponent {
     constructor() {
         this.bpsLabel = null;
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "16.2.12", ngImport: i0, type: BpsOptionItemGroupComponent, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "16.2.12", type: BpsOptionItemGroupComponent, selector: "bps-option-item-group", inputs: { bpsLabel: "bpsLabel" }, host: { classAttribute: "ant-select-item ant-select-item-group" }, ngImport: i0, template: ` <ng-container *nzStringTemplateOutlet="bpsLabel">{{ bpsLabel }}</ng-container> `, isInline: true, dependencies: [{ kind: "directive", type: i1.NzStringTemplateOutletDirective, selector: "[nzStringTemplateOutlet]", inputs: ["nzStringTemplateOutletContext", "nzStringTemplateOutlet"], exportAs: ["nzStringTemplateOutlet"] }], changeDetection: i0.ChangeDetectionStrategy.OnPush, encapsulation: i0.ViewEncapsulation.None }); }
+    static { this.ɵfac = function BpsOptionItemGroupComponent_Factory(t) { return new (t || BpsOptionItemGroupComponent)(); }; }
+    static { this.ɵcmp = /*@__PURE__*/ i0.ɵɵdefineComponent({ type: BpsOptionItemGroupComponent, selectors: [["bps-option-item-group"]], hostAttrs: [1, "ant-select-item", "ant-select-item-group"], inputs: { bpsLabel: "bpsLabel" }, decls: 1, vars: 1, consts: [[4, "nzStringTemplateOutlet"]], template: function BpsOptionItemGroupComponent_Template(rf, ctx) { if (rf & 1) {
+            i0.ɵɵtemplate(0, BpsOptionItemGroupComponent_ng_container_0_Template, 2, 1, "ng-container", 0);
+        } if (rf & 2) {
+            i0.ɵɵproperty("nzStringTemplateOutlet", ctx.bpsLabel);
+        } }, dependencies: [i1.NzStringTemplateOutletDirective], encapsulation: 2, changeDetection: 0 }); }
 }
-i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "16.2.12", ngImport: i0, type: BpsOptionItemGroupComponent, decorators: [{
-            type: Component,
-            args: [{
-                    selector: 'bps-option-item-group',
-                    template: ` <ng-container *nzStringTemplateOutlet="bpsLabel">{{ bpsLabel }}</ng-container> `,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    host: {
-                        class: 'ant-select-item ant-select-item-group'
-                    }
-                }]
-        }], ctorParameters: function () { return []; }, propDecorators: { bpsLabel: [{
-                type: Input
-            }] } });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib3B0aW9uLWl0ZW0tZ3JvdXAuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvYnBzLWNvbXBvbmVudHMtbGliL3NyYy9saWIvY29tcG9uZW50cy9icHMtc2VsZWN0L29wdGlvbi1pdGVtLWdyb3VwLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsdUJBQXVCLEVBQUUsU0FBUyxFQUFFLEtBQUssRUFBZSxpQkFBaUIsRUFBRSxNQUFNLGVBQWUsQ0FBQzs7O0FBYTFHLE1BQU0sT0FBTywyQkFBMkI7SUFHdEM7UUFGUyxhQUFRLEdBQW9ELElBQUksQ0FBQztJQUUzRCxDQUFDOytHQUhMLDJCQUEyQjttR0FBM0IsMkJBQTJCLGtLQVA1QixrRkFBa0Y7OzRGQU9qRiwyQkFBMkI7a0JBVHZDLFNBQVM7bUJBQUM7b0JBQ1QsUUFBUSxFQUFFLHVCQUF1QjtvQkFDakMsUUFBUSxFQUFFLGtGQUFrRjtvQkFDNUYsZUFBZSxFQUFFLHVCQUF1QixDQUFDLE1BQU07b0JBQy9DLGFBQWEsRUFBRSxpQkFBaUIsQ0FBQyxJQUFJO29CQUNyQyxJQUFJLEVBQUU7d0JBQ0osS0FBSyxFQUFFLHVDQUF1QztxQkFDL0M7aUJBQ0Y7MEVBRVUsUUFBUTtzQkFBaEIsS0FBSyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENoYW5nZURldGVjdGlvblN0cmF0ZWd5LCBDb21wb25lbnQsIElucHV0LCBUZW1wbGF0ZVJlZiwgVmlld0VuY2Fwc3VsYXRpb24gfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbmltcG9ydCB7IE56U2FmZUFueSB9IGZyb20gJ25nLXpvcnJvLWFudGQvY29yZS90eXBlcyc7XHJcblxyXG5AQ29tcG9uZW50KHtcclxuICBzZWxlY3RvcjogJ2Jwcy1vcHRpb24taXRlbS1ncm91cCcsXHJcbiAgdGVtcGxhdGU6IGAgPG5nLWNvbnRhaW5lciAqbnpTdHJpbmdUZW1wbGF0ZU91dGxldD1cImJwc0xhYmVsXCI+e3sgYnBzTGFiZWwgfX08L25nLWNvbnRhaW5lcj4gYCxcclxuICBjaGFuZ2VEZXRlY3Rpb246IENoYW5nZURldGVjdGlvblN0cmF0ZWd5Lk9uUHVzaCxcclxuICBlbmNhcHN1bGF0aW9uOiBWaWV3RW5jYXBzdWxhdGlvbi5Ob25lLFxyXG4gIGhvc3Q6IHtcclxuICAgIGNsYXNzOiAnYW50LXNlbGVjdC1pdGVtIGFudC1zZWxlY3QtaXRlbS1ncm91cCdcclxuICB9XHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBCcHNPcHRpb25JdGVtR3JvdXBDb21wb25lbnQge1xyXG4gIEBJbnB1dCgpIGJwc0xhYmVsOiBzdHJpbmcgfCBudW1iZXIgfCBUZW1wbGF0ZVJlZjxOelNhZmVBbnk+IHwgbnVsbCA9IG51bGw7XHJcblxyXG4gIGNvbnN0cnVjdG9yKCkge31cclxufVxyXG4iXX0=
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(BpsOptionItemGroupComponent, [{
+        type: Component,
+        args: [{
+                selector: 'bps-option-item-group',
+                template: ` <ng-container *nzStringTemplateOutlet="bpsLabel">{{ bpsLabel }}</ng-container> `,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                host: {
+                    class: 'ant-select-item ant-select-item-group'
+                }
+            }]
+    }], () => [], { bpsLabel: [{
+            type: Input
+        }] }); })();
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassDebugInfo(BpsOptionItemGroupComponent, { className: "BpsOptionItemGroupComponent", filePath: "lib\\components\\bps-select\\option-item-group.component.ts", lineNumber: 14 }); })();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoib3B0aW9uLWl0ZW0tZ3JvdXAuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vLi4vLi4vcHJvamVjdHMvYnBzLWNvbXBvbmVudHMtbGliL3NyYy9saWIvY29tcG9uZW50cy9icHMtc2VsZWN0L29wdGlvbi1pdGVtLWdyb3VwLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsdUJBQXVCLEVBQUUsU0FBUyxFQUFFLEtBQUssRUFBZSxpQkFBaUIsRUFBRSxNQUFNLGVBQWUsQ0FBQzs7OztJQU01Riw2QkFBaUQ7SUFBQSxZQUFjOzs7O0lBQWQsY0FBYztJQUFkLHFDQUFjOztBQU83RSxNQUFNLE9BQU8sMkJBQTJCO0lBR3RDO1FBRlMsYUFBUSxHQUFvRCxJQUFJLENBQUM7SUFFM0QsQ0FBQzs0RkFITCwyQkFBMkI7b0VBQTNCLDJCQUEyQjtZQVAxQiw4RkFBaUQ7O1lBQWxDLHFEQUFnQzs7O2lGQU9oRCwyQkFBMkI7Y0FUdkMsU0FBUztlQUFDO2dCQUNULFFBQVEsRUFBRSx1QkFBdUI7Z0JBQ2pDLFFBQVEsRUFBRSxrRkFBa0Y7Z0JBQzVGLGVBQWUsRUFBRSx1QkFBdUIsQ0FBQyxNQUFNO2dCQUMvQyxhQUFhLEVBQUUsaUJBQWlCLENBQUMsSUFBSTtnQkFDckMsSUFBSSxFQUFFO29CQUNKLEtBQUssRUFBRSx1Q0FBdUM7aUJBQy9DO2FBQ0Y7b0JBRVUsUUFBUTtrQkFBaEIsS0FBSzs7a0ZBREssMkJBQTJCIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3ksIENvbXBvbmVudCwgSW5wdXQsIFRlbXBsYXRlUmVmLCBWaWV3RW5jYXBzdWxhdGlvbiB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuaW1wb3J0IHsgTnpTYWZlQW55IH0gZnJvbSAnbmctem9ycm8tYW50ZC9jb3JlL3R5cGVzJztcclxuXHJcbkBDb21wb25lbnQoe1xyXG4gIHNlbGVjdG9yOiAnYnBzLW9wdGlvbi1pdGVtLWdyb3VwJyxcclxuICB0ZW1wbGF0ZTogYCA8bmctY29udGFpbmVyICpuelN0cmluZ1RlbXBsYXRlT3V0bGV0PVwiYnBzTGFiZWxcIj57eyBicHNMYWJlbCB9fTwvbmctY29udGFpbmVyPiBgLFxyXG4gIGNoYW5nZURldGVjdGlvbjogQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kuT25QdXNoLFxyXG4gIGVuY2Fwc3VsYXRpb246IFZpZXdFbmNhcHN1bGF0aW9uLk5vbmUsXHJcbiAgaG9zdDoge1xyXG4gICAgY2xhc3M6ICdhbnQtc2VsZWN0LWl0ZW0gYW50LXNlbGVjdC1pdGVtLWdyb3VwJ1xyXG4gIH1cclxufSlcclxuZXhwb3J0IGNsYXNzIEJwc09wdGlvbkl0ZW1Hcm91cENvbXBvbmVudCB7XHJcbiAgQElucHV0KCkgYnBzTGFiZWw6IHN0cmluZyB8IG51bWJlciB8IFRlbXBsYXRlUmVmPE56U2FmZUFueT4gfCBudWxsID0gbnVsbDtcclxuXHJcbiAgY29uc3RydWN0b3IoKSB7fVxyXG59XHJcbiJdfQ==

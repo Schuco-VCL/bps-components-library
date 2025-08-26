@@ -1,0 +1,46 @@
+import { Overlay } from '@angular/cdk/overlay';
+import { Platform } from '@angular/cdk/platform';
+import { AfterViewInit, ElementRef, EventEmitter, OnChanges, OnDestroy, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
+import { NzConfigKey, NzConfigService } from 'ng-zorro-antd/core/config';
+import { BooleanInput, IndexableObject } from 'ng-zorro-antd/core/types';
+import { BpsDropdownMenuComponent, NzPlacementType } from './dropdown-menu.component';
+import * as i0 from "@angular/core";
+export declare class BpsDropDownDirective implements AfterViewInit, OnDestroy, OnChanges {
+    readonly nzConfigService: NzConfigService;
+    elementRef: ElementRef;
+    private overlay;
+    private renderer;
+    private viewContainerRef;
+    private platform;
+    readonly _nzModuleName: NzConfigKey;
+    static ngAcceptInputType_bpsBackdrop: BooleanInput;
+    static ngAcceptInputType_bpsClickHide: BooleanInput;
+    static ngAcceptInputType_bpsDisabled: BooleanInput;
+    static ngAcceptInputType_bpsVisible: BooleanInput;
+    private portal?;
+    private overlayRef;
+    private destroy$;
+    private positionStrategy;
+    private inputVisible$;
+    private bpsTrigger$;
+    private overlayClose$;
+    bpsDropdownMenu: BpsDropdownMenuComponent | null;
+    bpsTrigger: 'click' | 'hover';
+    bpsMatchWidthElement: ElementRef | null;
+    bpsBackdrop: boolean;
+    bpsClickHide: boolean;
+    bpsDisabled: boolean;
+    bpsVisible: boolean;
+    bpsOverlayClassName: string;
+    bpsOverlayStyle: IndexableObject;
+    bpsPlacement: NzPlacementType;
+    readonly bpsVisibleChange: EventEmitter<boolean>;
+    setDropdownMenuValue<T extends keyof BpsDropdownMenuComponent>(key: T, value: BpsDropdownMenuComponent[T]): void;
+    constructor(nzConfigService: NzConfigService, elementRef: ElementRef, overlay: Overlay, renderer: Renderer2, viewContainerRef: ViewContainerRef, platform: Platform);
+    ngAfterViewInit(): void;
+    ngOnDestroy(): void;
+    ngOnChanges(changes: SimpleChanges): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<BpsDropDownDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<BpsDropDownDirective, "[bps-dropdown]", ["bpsDropdown"], { "bpsDropdownMenu": { "alias": "bpsDropdownMenu"; "required": false; }; "bpsTrigger": { "alias": "bpsTrigger"; "required": false; }; "bpsMatchWidthElement": { "alias": "bpsMatchWidthElement"; "required": false; }; "bpsBackdrop": { "alias": "bpsBackdrop"; "required": false; }; "bpsClickHide": { "alias": "bpsClickHide"; "required": false; }; "bpsDisabled": { "alias": "bpsDisabled"; "required": false; }; "bpsVisible": { "alias": "bpsVisible"; "required": false; }; "bpsOverlayClassName": { "alias": "bpsOverlayClassName"; "required": false; }; "bpsOverlayStyle": { "alias": "bpsOverlayStyle"; "required": false; }; "bpsPlacement": { "alias": "bpsPlacement"; "required": false; }; }, { "bpsVisibleChange": "bpsVisibleChange"; }, never, never, false, never>;
+}
+//# sourceMappingURL=bps-dropdown.directive.d.ts.map

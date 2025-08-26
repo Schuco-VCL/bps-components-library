@@ -1,0 +1,1 @@
+{"version":3,"file":"bps-modal-config.d.ts","sourceRoot":"","sources":["../../../../../projects/bps-components-lib/src/lib/components/bps-modal/bps-modal-config.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,eAAe,CAAC;AAE/C,MAAM,WAAW,cAAc;IAC7B,OAAO,CAAC,EAAE,OAAO,CAAC;IAClB,eAAe,CAAC,EAAE,OAAO,CAAC;CAC3B;AACD,eAAO,MAAM,eAAe,gCAAwD,CAAC"}

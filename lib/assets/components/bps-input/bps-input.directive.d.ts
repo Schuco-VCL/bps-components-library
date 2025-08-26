@@ -1,0 +1,44 @@
+import { Direction, Directionality } from '@angular/cdk/bidi';
+import { ComponentRef, ElementRef, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
+import { NgControl } from '@angular/forms';
+import { Subject } from 'rxjs';
+import { NzFormItemFeedbackIconComponent, NzFormNoStatusService, NzFormStatusService } from 'ng-zorro-antd/core/form';
+import { BooleanInput, NgClassInterface, NzSizeLDSType, NzStatus, NzValidateStatus } from 'ng-zorro-antd/core/types';
+import * as i0 from "@angular/core";
+export declare class BpsInputDirective implements OnChanges, OnInit, OnDestroy {
+    ngControl: NgControl;
+    private renderer;
+    private elementRef;
+    protected hostView: ViewContainerRef;
+    private directionality;
+    private nzFormStatusService?;
+    nzFormNoStatusService?: NzFormNoStatusService;
+    static ngAcceptInputType_disabled: BooleanInput;
+    static ngAcceptInputType_borderless: BooleanInput;
+    borderless: boolean;
+    size: NzSizeLDSType;
+    nzStepperless: boolean;
+    nzStatus: NzStatus;
+    opened: boolean;
+    get disabled(): boolean;
+    set disabled(value: boolean);
+    _disabled: boolean;
+    disabled$: Subject<boolean>;
+    dir: Direction;
+    prefixCls: string;
+    status: NzValidateStatus;
+    statusCls: NgClassInterface;
+    hasFeedback: boolean;
+    feedbackRef: ComponentRef<NzFormItemFeedbackIconComponent> | null;
+    components: Array<ComponentRef<NzFormItemFeedbackIconComponent>>;
+    private destroy$;
+    constructor(ngControl: NgControl, renderer: Renderer2, elementRef: ElementRef, hostView: ViewContainerRef, directionality: Directionality, nzFormStatusService?: NzFormStatusService, nzFormNoStatusService?: NzFormNoStatusService);
+    ngOnInit(): void;
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
+    private setStatusStyles;
+    private renderFeedbackIcon;
+    static ɵfac: i0.ɵɵFactoryDeclaration<BpsInputDirective, [{ optional: true; self: true; }, null, null, null, { optional: true; }, { optional: true; }, { optional: true; }]>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<BpsInputDirective, "input[bps-input],textarea[bps-input]", ["bpsInput"], { "borderless": { "alias": "borderless"; "required": false; }; "size": { "alias": "size"; "required": false; }; "nzStepperless": { "alias": "nzStepperless"; "required": false; }; "nzStatus": { "alias": "nzStatus"; "required": false; }; "opened": { "alias": "opened"; "required": false; }; "disabled": { "alias": "disabled"; "required": false; }; }, {}, never, never, false, never>;
+}
+//# sourceMappingURL=bps-input.directive.d.ts.map

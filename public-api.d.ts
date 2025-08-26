@@ -58,3 +58,4 @@ export * from './lib/components/bps-grid/bps-grid.component';
 export * from './lib/components/bps-tree/tree/nz-tree-base-node';
 export * from './lib/components/bps-tree/tree/nz-tree-base.definitions';
 export * from './lib/components/bps-dropdown/dropdown-button.directive';
+//# sourceMappingURL=public-api.d.ts.map
