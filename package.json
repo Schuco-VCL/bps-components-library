@@ -19,14 +19,13 @@
     "@tinymce/tinymce-angular": "7.0.0"
   },
   "module": "fesm2022/bps-components-lib.mjs",
-  "typings": "index.d.ts",
+  "typings": "public-api.d.ts",
   "exports": {
     "./package.json": {
       "default": "./package.json"
     },
     ".": {
-      "types": "./index.d.ts",
-      "esm2022": "./esm2022/bps-components-lib.mjs",
+      "types": "./public-api.d.ts",
       "esm": "./esm2022/bps-components-lib.mjs",
       "import": "./esm2022/bps-components-lib.mjs",
       "default": "./fesm2022/bps-components-lib.mjs"
